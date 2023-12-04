@@ -1,6 +1,3 @@
-
-Result Size: 634 x 645
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
