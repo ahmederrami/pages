@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body {
+  margin: 10px;
+  padding: 20px;
+  font-family:helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* navigation bar */
+nav {
+  background: whitesmoke;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+position: relative;
+}
+
+nav a {
+display: block;
+padding: 10px 15px;
+text-decoration: none;
+color: black;
+}
+
+nav ul ul {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #999;
+border-top: 2px solid #777;
+}
+
+nav ul li:hover > ul {
+display: inherit;
+}
+
+nav ul ul li {
+width: 200px;
+float: none;
+display: list-item;
+position: relative;
+}
+
+nav ul ul ul li {
+position: relative;
+top: -60px;
+left: 200px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Styling for the image inside the card */
+.card img {
+  width: 20%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for the text inside the card */
+.card .card-content {
+  padding: 16px;
+}
+
+/* Optional: Add some style to the title and description */
+.card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
 }
