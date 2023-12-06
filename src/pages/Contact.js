@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <>
       <div>Contact Content</div>
+      <div className='cards'>
       <div class="card">
         <img src={imageUrl} alt="Card" className="img"/>
         <div class="card-content">
@@ -33,17 +34,24 @@ const Contact = () => {
           <p>Tél : 0660-133501</p>
         </div>
       </div>
-      <div>
-          <h4>Responsable Facility Management</h4>
-          <p><small><i>Noureddine MARJANI</i></small></p>
+      <div class="card">
+        <img src={imageUrl} alt="Card" className="img"/>
+        <div class="card-content">
+          <h2>Noureddine MARJANI</h2>
+          <p>Responsable Facility Management</p>
           <p>Email : n.marjani@supratourstravel.com</p>
           <p>Tél : 0660-348453</p>
+        </div>
       </div>
-      <div>
-          <h4>Responsable Tourisme</h4>
-          <p><small><i>Adam BOUDARA</i></small></p>
+      <div class="card">
+        <img src={imageUrl} alt="Card" className="img"/>
+        <div class="card-content">
+          <h2>Adam BOUDARA</h2>
+          <p>Responsable Tourisme</p>
           <p>Email : a.boudara@supratourstravel.com</p>
           <p>Tél : 0702-066281</p>
+        </div>
+      </div>
       </div>
     </>
   );

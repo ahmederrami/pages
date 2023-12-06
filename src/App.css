@@ -59,6 +59,13 @@ left: 200px;
   width: 120px;
 }
 
+.cards {
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card {
   width: 300px;
   border: 1px solid #ccc;
