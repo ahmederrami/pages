@@ -96,3 +96,30 @@ left: 200px;
 .card p {
   color: #666;
 }
+
+/* CSS for Contact Card */
+.contact-card {
+  width: 20%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  background-color: #fff;
+}
+
+.contact-card img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.contact-card h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.contact-card p {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #666;
+}

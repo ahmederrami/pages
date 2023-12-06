@@ -1,59 +1,35 @@
-// Contact.js
+// ContactList.jsx (functional component)
 import React from 'react';
 
-const Contact = () => {
-  const imageUrl = './unknown.png';
+const ContactList = ({ contacts }) => {
   return (
-    <>
-      <div>Contact Content</div>
-      <div className='cards'>
-      <div class="card">
-        <img src={imageUrl} alt="Card" className="img"/>
-        <div class="card-content">
-          <h2>Youssef AFEKHAR</h2>
-          <p>Responsable Ressources Humaines - Formation</p>
-          <p>Email : y.afekhar@supratourstravel.com</p>
-          <p>Tél : 0660-342385</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src={imageUrl} alt="Card" className="img"/>
-        <div class="card-content">
-          <h2>Ahmed ERRAMI</h2>
-          <p>Responsable Financier</p>
-          <p>Email : a.errami@supratourstravel.com</p>
-          <p>Tél : 0660-147499</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src={imageUrl} alt="Card" className="img"/>
-        <div class="card-content">
-          <h2>Mohammed LAHMOUZ</h2>
-          <p>Responsable Services</p>
-          <p>Email : m.lahmouz@supratourstravel.com</p>
-          <p>Tél : 0660-133501</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src={imageUrl} alt="Card" className="img"/>
-        <div class="card-content">
-          <h2>Noureddine MARJANI</h2>
-          <p>Responsable Facility Management</p>
-          <p>Email : n.marjani@supratourstravel.com</p>
-          <p>Tél : 0660-348453</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src={imageUrl} alt="Card" className="img"/>
-        <div class="card-content">
-          <h2>Adam BOUDARA</h2>
-          <p>Responsable Tourisme</p>
-          <p>Email : a.boudara@supratourstravel.com</p>
-          <p>Tél : 0702-066281</p>
-        </div>
-      </div>
-      </div>
-    </>
+    <div>
+      <h2>Contact List</h2>
+        {contacts.map((contact) => (
+          <div key={contact.id} class="contact-card">
+            <img src={contact.imageUrl} />
+            <h2>{contact.name}</h2>
+            <h4>{contact.position}</h4>
+            <p>Email: {contact.email}</p>
+            <p>Phone: {contact.telephone}</p>
+          </div>
+        
+        ))}
+    </div>
+  );
+};
+
+const Contact = () => {
+  const contactList = [
+    { id: 1, name: 'Youssef AFEKHAR', imageUrl:'./unknown.png', position: 'Responsable RH et Formation', email: 'y.afekhar@supratourstravel.com', telephone:'0660-342385' },
+    { id: 2, name: 'Ahmed ERRAMI', imageUrl:'./unknown.png', position: 'Responsable Financier', email: 'a.errami@supratourstravel.com', telephone:'0660-147499' },
+    // Add more contacts as needed
+  ];
+
+  return (
+    <div>
+      <ContactList contacts={contactList} />
+    </div>
   );
 };
 
