@@ -91,3 +91,24 @@ h2.title{
   font-size: 1em;
   color: #000;
 }
+
+p {
+  text-indent: 50px;
+  line-height: 2.0;
+  text-align: justify;
+}
+
+/* AutoSlider.css */
+
+.image-slider {
+  width: 100%;
+  max-width: 90%; /* Adjust the max-width as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
