@@ -55,57 +55,25 @@ top: -60px;
 left: 200px;
 }
 
+h2.title{
+  text-align: center;
+}
+
 .logo {
   width: 120px;
 }
 
-.cards {
-  background: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-/* Styling for the image inside the card */
-.card img {
-  width: 20%;
-  height: auto;
-  border-bottom: 1px solid #ccc;
-}
-
-/* Styling for the text inside the card */
-.card .card-content {
-  padding: 16px;
-}
-
-/* Optional: Add some style to the title and description */
-.card h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-.card p {
-  color: #666;
-}
-
 /* CSS for Contact Card */
 .contact-card {
-  width: 20%;
+  width: 27%;
+  height: 350px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  background-color: #fff;
+  background-color:#999;
+  float: left;
 }
 
 .contact-card img {
@@ -121,5 +89,5 @@ left: 200px;
 .contact-card p {
   margin-top: 5px;
   font-size: 1em;
-  color: #666;
+  color: #000;
 }

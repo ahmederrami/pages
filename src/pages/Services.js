@@ -5,6 +5,7 @@ const Services = () => {
 
   return (
     <div>
+      <h2 className='title'>Organigramme</h2>
       <img src={imageUrl} alt="Organigramme" />
     </div>
   );

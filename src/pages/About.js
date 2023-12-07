@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <>
-    <div>About Content</div>
+    <h2 className='title'>Qui somme nous ?</h2>
     <p>Grande agence de voyages, filiale de l’Office National des Chemins de Fer,
     Supratours Travel n’a cessé, depuis sa création en 2009, d’innover, de développer
     et de diversifier ses activités en offrant à sa clientèle de nombreuses formules
