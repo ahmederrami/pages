@@ -1,5 +1,6 @@
 // ContactList.jsx (functional component)
 import React from 'react';
+import '../Contact.css';
 
 const ContactList = ({ contacts }) => {
   return (
@@ -10,8 +11,8 @@ const ContactList = ({ contacts }) => {
             <img src={contact.imageUrl} />
             <h2>{contact.name}</h2>
             <h4>{contact.position}</h4>
-            <p>Email: {contact.email}</p>
-            <p>Phone: {contact.telephone}</p>
+            <h6>Email: {contact.email}</h6>
+            <h6>Phone: {contact.telephone}</h6>
           </div>
         
         ))}
@@ -30,7 +31,7 @@ const Contact = () => {
   ];
 
   return (
-    <div>
+    <div className='card-container'>
       <ContactList contacts={contactList} />
     </div>
   );

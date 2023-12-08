@@ -1,6 +1,8 @@
 body {
   margin: 10px;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
   font-family:helvetica, sans-serif;
 }
 /* navigation bar */
@@ -63,41 +65,6 @@ h2.title{
   width: 120px;
 }
 
-/* CSS for Contact Card */
-.contact-card {
-  width: 27%;
-  height: 350px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  background-color:#999;
-  float: left;
-}
-
-.contact-card img {
-  width: 50%;
-  border-radius: 50%;
-}
-
-.contact-card h2 {
-  margin-top: 10px;
-  font-size: 1.5em;
-}
-
-.contact-card p {
-  margin-top: 5px;
-  font-size: 1em;
-  color: #000;
-}
-
-p {
-  text-indent: 50px;
-  line-height: 2.0;
-  text-align: justify;
-}
-
 /* AutoSlider.css */
 
 .image-slider {
@@ -111,4 +78,21 @@ p {
   width: 100%;
   height: auto;
   transition: transform 0.5s ease-in-out;
+}
+
+.image-container {
+  width: 100%; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Ajustez la hauteur selon vos besoins */
+  border: 1px solid #ccc; /* Bordure de 1 pixel avec couleur grise */
+  overflow: hidden; /* Masque le contenu dépassant de la div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container img {
+  width: 90%; /* L'image prendra 100% de la largeur de la div parente */
+  height: auto; /* La hauteur s'ajuste automatiquement pour maintenir les proportions */
+  display: block; /* Supprime l'espace en bas de l'image à cause de l'affichage en ligne par défaut */
 }

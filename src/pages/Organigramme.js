@@ -4,8 +4,7 @@ const Organigramme = () => {
   const imageUrl = './organigramme_st.png';
 
   return (
-    <div>
-      <h2 className='title'>Organigramme</h2>
+    <div className='image-container'>
       <img src={imageUrl} alt="Organigramme" />
     </div>
   );
