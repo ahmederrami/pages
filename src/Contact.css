@@ -1,14 +1,13 @@
 /* CSS for Contact Card */
 .contact-card {
-    width: 23%;
+    min-width: 25%;
+    max-width: 25%;
     height: 310px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     background-color:#999;
-    float: left;
   }
   
   .contact-card img {
@@ -31,5 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
   }

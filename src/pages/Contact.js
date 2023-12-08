@@ -4,8 +4,9 @@ import '../Contact.css';
 
 const ContactList = ({ contacts }) => {
   return (
-    <div>
+    <>
       <h2 className='title'>Contacts</h2>
+      <div  className='card-container'>
         {contacts.map((contact) => (
           <div key={contact.id} class="contact-card">
             <img src={contact.imageUrl} />
@@ -16,7 +17,8 @@ const ContactList = ({ contacts }) => {
           </div>
         
         ))}
-    </div>
+      </div>
+    </>
   );
 };
 
@@ -31,7 +33,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className='card-container'>
+    <div>
       <ContactList contacts={contactList} />
     </div>
   );
