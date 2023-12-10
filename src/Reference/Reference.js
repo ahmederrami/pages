@@ -6,15 +6,15 @@ const ReferenceList = ({ references }) => {
     return (
         <>
             <h2 className='title'>References</h2>
-            <div className={styles.slideShow}>
-                <div className={styles.slidesContainer}>
+            <div className={styles.carouselContainer}>
+                <div className={styles.slides}>
                 {references.map((reference) => (
-                    <div className={styles.slide}>
-                        <div key={reference.id} className={styles.slideFilter}>
+                    
+                        <div key={reference.id} className={styles.slide}>
                             
                             <img src={reference.imageUrl} alt="" />
                         </div>
-                    </div>
+                    
                 ))}
                 </div>
             </div>

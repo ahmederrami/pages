@@ -1,141 +1,41 @@
-/* Created by Demiz 🇬🇭🇬🇭🇱🇷🇱🇷 */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-* {
-    font-family: Raleway, Arial, sans-serif;
-}
-
-.slideShow {
-    margin: 0 auto;
-    max-width: 900px;
-    min-width: 200px;
-    height: 500px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .carouselContainer {
+    width: 100%;
     overflow: hidden;
-}
-.slidesContainer {
-    margin: 0 auto;
-    position: relative;
-    max-width: 800px;
-    min-width: 200px;
-    height: 500px;
-}
-.slide {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    top: 0;
-    right: -90%;
-    border-radius: 20px;
-    animation: slide2 10s ease-out infinite;
-    overflow: hidden;
-}
-.slide h1, 
-.slide p {
-    padding: 0 20px;
-}
-.slide h1 {
-    margin-top: 50px;
-    font-size: 3em;
-}
-.slide p {
-    margin-top: 40px;
-    font-size: 1.2em;
-}
-.slideFilter {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.507);
-}
-
-.slideFilter img {
-    width: 100%;
-}
-
-.hiddenCover {
-    position: absolute;
-    bottom: 1px;
-    height: 200%;
-    width: 100%;
-    transition: 0.1s all ease-out;
-}
-.btnWrapper {
+  }
+  
+  .slides {
+    display: flex;
+    /* Utilisation de "white-space: nowrap;" pour éviter le retour à la ligne des slides */
+    white-space: nowrap;
+    animation: scroll 10s linear infinite; /* Applique l'animation au conteneur de carousel */
+  }
+  
+  .slide {
+    box-sizing: border-box;
     text-align: center;
-    height: 50%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.87);
-}
-.btnWrapper button {
-    margin-top: 90px;
-    background-color: rgb(255, 255, 255);
-    font-size: 1.4em;
-    color: rgb(0, 0, 0);
-    padding: 20px 20%;
-    border-radius: 7px;
-    border: 1px solid rgb(212, 212, 212);
-    transition: 0.2s all linear;
-}
-.btnWrapper button:hover {
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.493);
-    transform:translateY(10%);
-}
-.hiddenCover:hover {
-    bottom: -100%;
-}
-.slide:nth-child(1) {
-    animation-name: slide1;
-    background-position: center;
-    background-size: cover;
-    z-index: 4;
-}
-.slide:nth-child(2) {
-    animation-delay: 2s;
-    background-position: center;
-    z-index: 3;
-}
-.slide:nth-child(3) {
-    animation-delay: 4s;
-    background-position: center;
-    z-index: 2;
-}
-.slide:nth-child(4) {
-    animation-delay: 6s;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-}
-
-@keyframes slide1 {
-    20% {
-        right: 5%;
-    }
-    40% {
-        right: 5%;
-    }
-    60% {
-        right: 100%;
-    }
-    80% {
-        right: 200%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Ajoutez d'autres styles de design selon vos besoins */
+    width: 100%; /* Chaque slide occupe 100% de la largeur du conteneur */
+  }
+  
+  /* Animation de défilement horizontal */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
     100% {
-        right: 300%;
+      transform: translateX(-100%);
     }
-}
-@keyframes slide2 {
-    20% {
-        right: -90%;
-    }
-    40% {
-        right: 5%;
-    }
-    60% {
-        right: 100%;
-    }
-    80% {
-        right: 200%;
-    }
-    100% {
-        right: 300%;
-    }
-}
+  }
+  
+  /* Arrête l'animation au survol du carousel */
+  .carouselContainer:hover .slides {
+    animation-play-state: paused;
+  }
+  
