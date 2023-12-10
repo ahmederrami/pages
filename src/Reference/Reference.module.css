@@ -4,37 +4,20 @@
 * {
     font-family: Raleway, Arial, sans-serif;
 }
-/*body {
-    background-color: rgb(255, 255, 255);
-    color: black;
-}*/
 
-body {
-    margin: 10px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    font-family:helvetica, sans-serif;
-  }
-
-#head {
-    text-align: center;
-    margin-bottom: 80px;
-    color: black; 
-}
-.slide-show {
+.slideShow {
     margin: 0 auto;
     max-width: 900px;
     min-width: 200px;
-    height: 250px;
+    height: 500px;
     overflow: hidden;
 }
-.slides-container {
+.slidesContainer {
     margin: 0 auto;
     position: relative;
     max-width: 800px;
     min-width: 200px;
-    height: 250px;
+    height: 500px;
 }
 .slide {
     position: absolute;
@@ -58,26 +41,31 @@ body {
     margin-top: 40px;
     font-size: 1.2em;
 }
-.slide-filter {
+.slideFilter {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.507);
 }
-.hidden-cover {
+
+.slideFilter img {
+    width: 100%;
+}
+
+.hiddenCover {
     position: absolute;
     bottom: 1px;
     height: 200%;
     width: 100%;
     transition: 0.1s all ease-out;
 }
-.btn-wrapper {
+.btnWrapper {
     text-align: center;
     height: 50%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.87);
 }
-.btn-wrapper button {
+.btnWrapper button {
     margin-top: 90px;
     background-color: rgb(255, 255, 255);
     font-size: 1.4em;
@@ -87,11 +75,11 @@ body {
     border: 1px solid rgb(212, 212, 212);
     transition: 0.2s all linear;
 }
-.btn-wrapper button:hover {
+.btnWrapper button:hover {
     box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.493);
     transform:translateY(10%);
 }
-.hidden-cover:hover {
+.hiddenCover:hover {
     bottom: -100%;
 }
 .slide:nth-child(1) {

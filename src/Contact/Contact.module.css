@@ -1,5 +1,5 @@
 /* CSS for Contact Card */
-.contact-card {
+.contactCard {
     min-width: 25%;
     max-width: 25%;
     height: 310px;
@@ -10,23 +10,23 @@
     background-color:#999;
   }
   
-  .contact-card img {
+  .contactCard img {
     width: 50%;
     border-radius: 50%;
   }
   
-  .contact-card h2 {
+  .contactCard h2 {
     margin-top: 10px;
     font-size: 1.5em;
   }
   
-  .contact-card p {
+  .contactCard p {
     margin-top: 1px;
     font-size: 1em;
     color: #000;
   }
 
-  .card-container {
+  .cardContainer {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,10 +4,10 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 //import Home from "./pages/Home";
-import About from "./pages/About";
-import Reference from "./pages/Reference";
+import About from "./About/About";
+import Reference from "./Reference/Reference";
 import Organigramme from "./pages/Organigramme";
-import Contact from "./pages/Contact";
+import Contact from "./Contact/Contact";
 //import NoPage from "./pages/NoPage";
 
 import Slider from "./pages/Slider";
