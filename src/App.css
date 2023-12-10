@@ -1,10 +1,4 @@
-body {
-  margin: 10px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  font-family:helvetica, sans-serif;
-}
+
 /* navigation bar */
 nav {
   background: whitesmoke;

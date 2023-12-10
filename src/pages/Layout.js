@@ -14,6 +14,9 @@ const Layout = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
+            <Link to="/reference">Reference</Link>
+          </li>
+          <li>
             <Link to="/Organigramme">Organigramme</Link>
           </li>
           <li>

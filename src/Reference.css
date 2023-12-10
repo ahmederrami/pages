@@ -1,0 +1,153 @@
+/* Created by Demiz 🇬🇭🇬🇭🇱🇷🇱🇷 */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    font-family: Raleway, Arial, sans-serif;
+}
+/*body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}*/
+
+body {
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family:helvetica, sans-serif;
+  }
+
+#head {
+    text-align: center;
+    margin-bottom: 80px;
+    color: black; 
+}
+.slide-show {
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 200px;
+    height: 250px;
+    overflow: hidden;
+}
+.slides-container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 800px;
+    min-width: 200px;
+    height: 250px;
+}
+.slide {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    right: -90%;
+    border-radius: 20px;
+    animation: slide2 10s ease-out infinite;
+    overflow: hidden;
+}
+.slide h1, 
+.slide p {
+    padding: 0 20px;
+}
+.slide h1 {
+    margin-top: 50px;
+    font-size: 3em;
+}
+.slide p {
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+.slide-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.hidden-cover {
+    position: absolute;
+    bottom: 1px;
+    height: 200%;
+    width: 100%;
+    transition: 0.1s all ease-out;
+}
+.btn-wrapper {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+.btn-wrapper button {
+    margin-top: 90px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+    padding: 20px 20%;
+    border-radius: 7px;
+    border: 1px solid rgb(212, 212, 212);
+    transition: 0.2s all linear;
+}
+.btn-wrapper button:hover {
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.493);
+    transform:translateY(10%);
+}
+.hidden-cover:hover {
+    bottom: -100%;
+}
+.slide:nth-child(1) {
+    animation-name: slide1;
+    background-position: center;
+    background-size: cover;
+    z-index: 4;
+}
+.slide:nth-child(2) {
+    animation-delay: 2s;
+    background-position: center;
+    z-index: 3;
+}
+.slide:nth-child(3) {
+    animation-delay: 4s;
+    background-position: center;
+    z-index: 2;
+}
+.slide:nth-child(4) {
+    animation-delay: 6s;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+@keyframes slide1 {
+    20% {
+        right: 5%;
+    }
+    40% {
+        right: 5%;
+    }
+    60% {
+        right: 100%;
+    }
+    80% {
+        right: 200%;
+    }
+    100% {
+        right: 300%;
+    }
+}
+@keyframes slide2 {
+    20% {
+        right: -90%;
+    }
+    40% {
+        right: 5%;
+    }
+    60% {
+        right: 100%;
+    }
+    80% {
+        right: 200%;
+    }
+    100% {
+        right: 300%;
+    }
+}
