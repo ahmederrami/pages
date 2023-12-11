@@ -7,6 +7,7 @@ import Layout from "./pages/Layout";
 import About from "./About/About";
 import Reference from "./Reference/Reference";
 import Organigramme from "./pages/Organigramme";
+import Omra from "./pages/Omra";
 import Contact from "./Contact/Contact";
 //import NoPage from "./pages/NoPage";
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="references" element={<Reference />} />
           <Route path="organigramme" element={<Organigramme />} />
+          <Route path="omra" element={<Omra />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Slider />} />
         </Route>

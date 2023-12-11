@@ -20,6 +20,9 @@ const Layout = () => {
             <Link to="/Organigramme">Organigramme</Link>
           </li>
           <li>
+            <Link to="/omra">Omra</Link>
+          </li>
+          <li>
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
